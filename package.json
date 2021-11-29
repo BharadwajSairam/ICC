@@ -1,0 +1,30 @@
+{
+  "name": "myboard",
+  "version": "1.0.0",
+  "description": "Collaborative white board for ICC",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BharadwajSairam/MyBoard.git"
+  },
+  "keywords": [
+    "Collab",
+    "drawing",
+    "board"
+  ],
+  "author": "Sairam",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BharadwajSairam/MyBoard/issues"
+  },
+  "homepage": "https://github.com/BharadwajSairam/MyBoard#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "firebase-admin": "^9.4.2",
+    "socketio": "^1.0.0"
+  }
+}
