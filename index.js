@@ -53,12 +53,13 @@ io.on("connection", (socket) => {
     const s = () => {
         snapshot.get().then((item) => {
             const items = item.docs.map((doc) => doc.data());
+
             items.map((user) => {
                 data1 = user.first;
             });
-            console.log("data11111=--" + data1);
+
             io.to(socketlist[socketlist.length - 1]).emit("init", data1);
-            console.log('data emittedooooo');
+            console.log('data emitted');
         });
     }
     socket.on("get", (data) => {
